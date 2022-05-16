@@ -17,3 +17,4 @@ Restart your Xampp server
 From your IDE, clone the repo to your DocumentRoot for your virtual host.
 Create a MySQL database and run the db.sql (inside SLQ directory).
 Rename the .env_example to .env and update the DB details in that file to match database.
+In your browser, you should now be able to navigate to the host created (http://machinecompare.test), or whatever you configured.
