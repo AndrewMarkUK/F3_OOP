@@ -1,0 +1,20 @@
+<span class="float-start">Page <b>{{ @pg.currentPage }}</b> of <b>{{ @pg.allPages }}</b></span>
+<nav aria-label="navigation">
+<ul class="pagination justify-content-end">
+    <F3:check if="{{@pg.firstPage}}">
+        <li class="page-item"><a class="page-link"  href="{{@pg.route.@pg.prefix.@pg.firstPage}}">First</a></li>
+    </F3:check>
+    <F3:check if="{{@pg.prevPage}}">
+        <li class="page-item"><a class="page-link"  href="{{@pg.route.@pg.prefix.@pg.prevPage}}">LEFT</a></li>
+    </F3:check>
+    <F3:repeat group="{{@pg.rangePages}}" value="{{@page}}">
+        <li class="page-item" {{@page == @pg.currentPage ? 'class="active"':'' }}><a class="page-link"  href="{{@pg.route.@pg.prefix.@page}}">{{@page}}</a></li>
+    </F3:repeat>
+    <F3:check if="{{@pg.nextPage}}">
+        <li class="page-item"><a class="page-link"  href="{{@pg.route.@pg.prefix.@pg.nextPage}}">Right</a></li>
+    </F3:check>
+    <F3:check if="{{@pg.lastPage}}">
+        <li class="page-item"><a class="page-link"  href="{{@pg.route.@pg.prefix.@pg.lastPage}}">Last [{{ @pg.lastPage }}]</a></li>
+    </F3:check>
+</ul>
+</nav>

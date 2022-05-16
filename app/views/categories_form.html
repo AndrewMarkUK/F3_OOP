@@ -1,0 +1,14 @@
+<form action="/store/categories/{{@action}}/{{@id}}" id="record_form" name="record_form">
+    <fieldset>
+        <check if="{{@action != 'delete'}}">
+            <div id="form_fields">
+                <div class="alert alert-danger d-none" id="input_failure">&nbsp;</div>
+                <div class="form-group mb-3">
+                    <label for="name">Category Name</label>
+                    <input type="text" id="name" name="name" class="form-control form-control-lg mt-2" value="{{@record_details.name}}">
+                </div>
+            </div>
+        </check>
+        <include href="buttons_form.html"></include>
+    </fieldset>
+</form>

@@ -1,0 +1,16 @@
+<thead>
+<tr>
+    <th scope="col" class="text-center col-1">#</th>
+    <th scope="col">Name</th>
+    <th scope="col" class="text-center col-1">Action</th>
+</tr>
+</thead>
+<tbody id="record_index">
+<repeat group="{{@data.subset}}" value="{{@row}}">
+    <tr class="align-middle">
+        <td class="col-1 text-center">{{@row.id}}</td>
+        <td>{{@row.name}}</td>
+        <td class="col-md-2 col-lg-1 text-center text-nowrap"><include href="buttons_table.html"></include></td>
+    </tr>
+</repeat>
+</tbody>

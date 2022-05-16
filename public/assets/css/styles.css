@@ -1,0 +1,33 @@
+button, input, .modal-content, .modal-header, .alert, .page-link, select {
+    border-radius: 0 !important;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.modal-header {
+    background-color: #69c3c4;
+    color: #ffffff;
+}
+
+.modal-dialog {
+    margin: 0 auto;
+}
+
+.modal-content {
+    border: none !important;
+}
+
+.modal-footer {
+    display: block;
+}
+
+#form_button,#cancel_button {
+    width: 127px;
+    text-transform: uppercase;
+}
