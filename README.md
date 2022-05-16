@@ -1,6 +1,6 @@
 # F3-OOP
 
-This is to run XAMPP Environment.
+This is to run Windows XAMPP Environment.
 
 Create a host on your local machine (machinecompare.test) and set up a virtual host, for example:
 
