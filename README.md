@@ -13,7 +13,7 @@ In C:\xampp\apache\conf\extra httpd-vhosts.conf include...
        ServerName machinecompare.test
 </VirtualHost>
 
-Restart your Xampp server
+Re/start your Xampp server
 From your IDE, clone the repo to your DocumentRoot for your virtual host.
 Create a MySQL database and run the db.sql (inside SLQ directory).
 Rename the .env_example to .env and update the DB details in that file to match database.
