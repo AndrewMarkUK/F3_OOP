@@ -1,6 +1,10 @@
 <h1 class="float-start">{{@table}}</h1>
-<span class="float-end my-2"><button type="button" class="btn btn-primary show_form_modal" data-modal_title="Create Record" data-route="/store/{{@table}}/form/create/0"><i class="bi bi-plus-square"></i></button></span>
-<div id="table_ui">
+<check if="{{@table == 'products' && @count < 1}}">
+    <true><span class="float-end mt-3 text-danger fw-bold">You need to add categories before adding products!</span></true>
+    <false><span class="float-end my-2"><button type="button" class="btn btn-primary show_form_modal" data-modal_title="Create Record" data-route="/store/{{@table}}/form/create/0"><i class="bi bi-plus-square"></i></button></span>
+    </false>
+</check>
+    <div id="table_ui">
 <table class="table table-bordered table-striped table-hover" id="{{@table}}">
     <include href="{{@table_html}}"></include>
 </table>

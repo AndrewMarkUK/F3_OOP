@@ -2,8 +2,13 @@
 
 class ProductsController extends AppController
 {
+
     public function all($f3)
     {
+        $check_for_categories = new CategoriesModel($this->db);
+        $check_for_categories->category_menu();
+        $f3->set('count',$check_for_categories->count());
+
         $f3->set('table','products');
         $data = new ProductsModel($this->db);
         $data = $data->all();
