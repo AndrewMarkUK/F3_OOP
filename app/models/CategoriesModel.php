@@ -40,6 +40,7 @@ class CategoriesModel extends DB\SQL\Mapper
         $this->erase();
     }
 
+    /* RAW SQL EXAMPE */
     public function category_menu()
     {
         return $this->db->exec('SELECT id, name FROM categories');
